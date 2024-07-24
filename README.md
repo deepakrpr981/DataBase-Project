@@ -31,4 +31,21 @@ This analysis aims to uncover the different customers segments, purchase trends 
 # Exploratory Data Analysis (EDA): 
 Exploratory data analysis is done to answer the listed questions and aims of this project.
 
-# Conclusion:
+# Business Questions To Answer
+1. How many unique cities does the data have?
+2. In which city is each branch?
+# Product
+1. How many unique product lines does the data have?
+2. What is the most common payment method?
+3. What is the most selling product line?
+4. What is the total revenue by month?
+4. What month had the largest COGS?
+5. What product line had the largest revenue?
+6. What is the city with the largest revenue?
+7. What product line had the largest VAT?
+8. Fetch each product line and add a column to those product line showing "Good", "Bad". Good if its greater than average sales
+9. Which branch sold more products than average product sold?
+10. What is the most common product line by gender?
+11. What is the average rating of each product line?
+
+    
