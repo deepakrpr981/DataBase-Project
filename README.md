@@ -96,3 +96,32 @@ CREATE TABLE IF NOT EXISTS sales(
     rating FLOAT(2, 1)
 );
 ```
+# Business Questions To Answer Query 
+
+
+
+
+
+
+
+
+
+# Product Query
+
+
+
+
+
+
+
+
+
+
+# Sales Query
+
+
+
+
+
+
+# Customer Query
