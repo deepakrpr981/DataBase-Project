@@ -422,7 +422,7 @@ ORDER BY avg_tax_pct DESC;
 - Which customer type pays the most in VAT?
 ```sql
 SELECT
-	customer_type,
+customer_type,
 	AVG(tax_pct) AS total_tax
 FROM sales
 GROUP BY customer_type
