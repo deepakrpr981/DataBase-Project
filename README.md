@@ -346,7 +346,7 @@ ORDER BY avg_rating DESC;
 4. more or less the same rating each time of the day.alter
 
 
--- Which time of the day do customers give most ratings per branch?
+- Which time of the day do customers give most ratings per branch?
 ```sql
 SELECT
 	time_of_day,
@@ -386,6 +386,57 @@ ORDER BY total_sales DESC;
 ```
 
 
+# Sales Query
+
+- Number of sales made in each time of the day per weekday 
+```sql
+SELECT
+	time_of_day,
+	COUNT(*) AS total_sales
+FROM sales
+WHERE day_name = "Sunday"
+GROUP BY time_of_day 
+ORDER BY total_sales DESC;
+```sql
+1. Evenings experience most sales, the stores are 
+2. filled during the evening hours
+
+- Which of the customer types brings the most revenue?
+```sql
+SELECT
+	customer_type,
+	SUM(total) AS total_revenue
+FROM sales
+GROUP BY customer_type
+ORDER BY total_revenue;
+```
+- Which city has the largest tax/VAT percent?
+```sql
+SELECT
+	city,
+    ROUND(AVG(tax_pct), 2) AS avg_tax_pct
+FROM sales
+GROUP BY city 
+ORDER BY avg_tax_pct DESC;
+```sql
+- Which customer type pays the most in VAT?
+```sql
+SELECT
+	customer_type,
+	AVG(tax_pct) AS total_tax
+FROM sales
+GROUP BY customer_type
+ORDER BY total_tax;
+```sql
 
 
-# Customer Query
+
+
+
+
+
+
+
+
+
+
