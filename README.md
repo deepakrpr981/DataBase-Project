@@ -110,7 +110,9 @@ FROM sales;
 
 ALTER TABLE sales ADD COLUMN time_of_day VARCHAR(20);
 ```
-
+- For this to work turn off safe mode for update
+- Edit > Preferences > SQL Edito > scroll down and toggle safe mode
+- Reconnect to MySQL: Query > Reconnect to server
 
 # Business Questions To Answer Query 
 
