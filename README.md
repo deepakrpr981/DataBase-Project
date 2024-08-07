@@ -420,7 +420,7 @@ GROUP BY city
 ORDER BY avg_tax_pct DESC;
 ```sql
 - Which customer type pays the most in VAT?
-```
+```sql
 SELECT
 	customer_type,
 	AVG(tax_pct) AS total_tax
